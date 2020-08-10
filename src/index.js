@@ -2,19 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import 'tachyons'
+import 'tachyons';
 
-// Import array containing robot objects.
-import { robots } from './robots.js'
-// Import CardList component.
-import CardList from './CardList'
+import App from './containers/App';
 
-// Passes that obj array as a property to the CardList component.
 
-ReactDOM.render(
-  <React.StrictMode>
-  <CardList robots={robots}/>,
-  </React.StrictMode>,
+ReactDOM.render(<App/>,
   document.getElementById('root')
 );
 
